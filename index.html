@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        main {
+            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+            height: 100vh;
+        }
+        article {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container py-3">
+            <section class="d-flex justify-content-center">
+                <article class="input-group mb-5">
+                    <input id="input" class="form-control" type="text" placeholder="Search location">
+                    <button id="btn" class="input-group-append btn btn-dark" type="submit">Search</button>
+                </article>
+            </section>
+            <section class="d-flex justify-content-center">
+                <article class="result text-light p-3">
+                    <h1>Temperature: <span id="temperature"></span>&deg;C</h1>
+                    <h4>Humidity: <span id="humidity"></span>%</h4>
+                    <h4>Description: <span id="description"></span></h4>
+                    <h4>City: <span id="city"></span></h4>
+                    <h4>Country: <span id="country"></span></h4>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="./main.js"></script>
+</body>
+</html>
